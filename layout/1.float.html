@@ -1,0 +1,142 @@
+<style>
+	main{
+		width: 100vw;
+		height: 100vh;
+
+		
+	}
+
+	.header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 10%;
+		float:left;
+		background-color: turquoise;
+
+		color: white;
+		font-size: 2rem;
+		font-weight: bolder;
+	}
+
+	.side-bar{
+		float:left;
+		width: 30%;
+		height: 30%;
+		background-color: blueviolet;
+	}
+
+	.main-1{
+		float:left;
+		width:65%;
+		height:125px;
+		margin-bottom:10px;
+		background-color: brown;
+		animation: resize 10s infinite;
+		animation-direction: alternate;
+		color: white;
+	}
+	.main-2{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		float:left;
+		width:30%;
+		height:125px;
+		margin-bottom:10px;
+		margin-top: 10px;
+		margin-right: 10px;
+		background-color: brown;
+		color:white;
+		;
+	}
+	.main-2-head{
+		float:left;
+		width:30%;
+		height:150px;
+		margin-bottom:10px;
+		margin-top: 10px;
+		margin-right: 10px;
+		background-color: brown;
+		color: white;
+	}
+
+	.main-3{
+		display:inline-block;
+
+		position: relative;
+	
+		width:35%;
+		height:6%;
+		margin-bottom:5px;
+		background-color: blueviolet;
+		color: white;
+		font-weight: bold;
+
+	}
+
+	@keyframes resize {
+		from {
+			width: 50%
+		}
+
+		to {
+			width: 100%;
+		}
+	}
+	
+
+
+</style>
+
+<main>
+	<section class="header">
+		사용이유
+	</section>
+
+	<section class="main-1">
+		float은 기본적인 element간의 충동을 무시한다.
+	</section>
+	<section class="main-3">
+		하지만 유일하게 inline-block 만이 float과 상호작용 가능하다.
+	</section>
+	<section class="main-3">
+		기본적으로 float의 정책과 반대방향에 위치하지만
+	</section>
+	
+	<section class="main-1">
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" > float의 width가 100%를 차지할때는 block처럼 아래로 내려온다. </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" > 재밌는 점은 이처럼 블럭간의 위치가 떨어져있어도 float으로 생긴 빈공간에 </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" > 처음부터 스택킹이 가능하다는 점이다.  </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" > 포지셔닝이 중요한 레이아웃에서 float은 사용하기 어렵다. 애초에 텍스트 위에 이미지를 띄우는 목적으로 사용되었다.   </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" > 사실상 용도를 찾기 어렵다. 굳이 쓴다면 모바일버전에서 컬럼사이로 재배치 인데...</span>
+	</section>
+
+	
+	<section class="header">
+	</section>
+	<section class="main-2-head">
+	</section>
+	<section class="main-2">
+	</section>
+	<section class="main-2">
+	</section>
+	<section class="main-2">
+		float은 방향대로 흐르다 첫번째 턱에서 막힌다. 
+	</section>
+
+
+</main>
+

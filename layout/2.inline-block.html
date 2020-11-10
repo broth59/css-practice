@@ -1,0 +1,124 @@
+<style>
+	main{
+		width: 100vw;
+		height: 100vh;
+
+		
+	}
+
+	.header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 10%;
+		display:inline-block;
+		background-color: turquoise;
+
+		color: white;
+		font-size: 2rem;
+		font-weight: bolder;
+	}
+
+	.side-bar{
+		display:inline-block;
+		width: 30%;
+		height: 30%;
+		background-color: blueviolet;
+	}
+
+	.main-1{
+		display:inline-block;
+		width:75%;
+		height:125px;
+		margin-bottom:10px;
+		background-color: brown;
+		animation-direction: alternate;
+		color: white;
+	}
+	.main-2{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display:inline-block;
+		width:30%;
+		height:125px;
+		margin-bottom:10px;
+		margin-top: 10px;
+		margin-right: 10px;
+		background-color: brown;
+		color:white;
+		;
+	}
+	.main-2-head{
+		display:inline-block;
+		width:30%;
+		height:150px;
+		margin-bottom:10px;
+		margin-top: 10px;
+		margin-right: 10px;
+		background-color: brown;
+		color: white;
+	}
+
+	.main-3{
+		display:inline-block;
+
+		position: relative;
+	
+		width:35%;
+		height:6%;
+		margin-bottom:5px;
+		background-color: blueviolet;
+		color: white;
+		font-weight: bold;
+
+	}
+
+	@keyframes resize {
+		from {
+			width: 50%
+		}
+
+		to {
+			width: 100%;
+		}
+	}
+	
+
+
+</style>
+
+<main>
+	<section class="header">
+		사용이유
+	</section>
+
+	<section class="main-1">
+		float은 기본적인 element간의 충동을 무시한다.
+	</section>
+	<section style="display:inline-block;width:10%; height: 500px; background-color: blue; ">
+	</section>
+	
+
+	<section class="main-3">
+		<span style="position: absolute;" > 인라인 블록의 문제점은 </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" > float처럼 스택킹이 안된다는 것이다. </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" >  </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" >   </span>
+	</section>
+	<section class="main-3">
+		<span style="position: absolute;" > </span>
+	</section>
+
+
+
+</main>
+
